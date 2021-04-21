@@ -4,9 +4,9 @@ import { View } from 'react-native';
 
 import { storiesOf } from '@storybook/react-native';
 
-import MyComponent from './MyComponent';
+import Phrase from './Phrase';
 
 
-storiesOf('MyComponent', module)
+storiesOf('Phrase', module)
   .addDecorator(story => <View>{story()}</View>)
   .add('greeting', () => <MyComponent greeting= "Hello" />);
