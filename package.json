@@ -42,10 +42,7 @@
     "react-test-renderer": "17.0.1"
   },
   "jest": {
-    "preset": "react-native",
-    "moduleNameMapper": {
-      "\\.svg": "<rootDir>/__mocks__/svgMock.js"
-    }
+    "preset": "react-native"
   },
   "config": {
     "react-native-storybook-loader": {
