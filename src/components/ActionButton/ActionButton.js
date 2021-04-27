@@ -1,44 +1,83 @@
 import * as React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 
+import ArrowRight from '../../assets/icons/arrow-right.svg';
+import Pick from '../../assets/icons/pick.svg';
 import Correct from '../../assets/icons/correct.svg';
-// import FontAwesome from "react-native-vector-icons/FontAwesome";
-// import Constants from 'expo-constants';
+import Wrong from '../../assets/icons/wrong.svg';
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'transparent',
   },
-  text: {
+  subcontainer: {
     color: '#06B6D4',
     fontSize: 23,
     borderWidth: 1,
-    width: '50%',
-    height: '50%',
-    margin: 20,
     textAlign: 'center',
     backgroundColor: 'transparent',
     borderWidth: 0,
   },
-  subcontainer: {
+  button: {
+    backgroundColor: 'transparent',
     display: 'flex',
     flexDirection: 'row',
-    marginLeft: 0,
+    justifyContent: 'space-between',
+    marginLeft: 90,
+    marginRight: 270,
+    paddingTop: 17,
+    paddingLeft: 16,
+    paddingBottom: 17,
+    paddingRight: 20,
   },
-  image: {
-    marginTop: 30,
-    marginLeft: 0,
+  correct: {
+    color: '#06D440',
+  },
+  wrong: {
+    color: '#D4068E',
+  },
+  text: {
+    color: '#06B6D4',
+  },
+  icon: {
+    marginTop: 2,
   },
 });
 
-export default function ActionButton({title, onPress}) {
+export default function ActionButton({
+  onPress,
+  title,
+  learnText,
+  pickText,
+  correctText,
+  wrongText,
+}) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={onPress} style={styles.subcontainer}>
-        <Text style={styles.text}>{title}</Text>
-        {/* <FontAwesome name={"chevron-up"} color="red" fontSize= {48}/> */}
-        <Correct />
-      </TouchableOpacity>
+      <View style={styles.subcontainer}>
+        <TouchableOpacity onPress={onPress} style={styles.button}>
+          <Text style={styles.text}>{learnText}</Text>
+          <ArrowRight style={styles.icon} />
+        </TouchableOpacity>
+      </View>
+      <View style={styles.subcontainer}>
+        <TouchableOpacity onPress={onPress} style={styles.button}>
+          <Text style={styles.text}>{pickText}</Text>
+          <Pick />
+        </TouchableOpacity>
+      </View>
+      <View style={styles.subcontainer}>
+        <TouchableOpacity onPress={onPress} style={styles.button}>
+          <Text style={styles.correct}>{correctText}</Text>
+          <Correct />
+        </TouchableOpacity>
+      </View>
+      <View style={styles.subcontainer}>
+        <TouchableOpacity onPress={onPress} style={styles.button}>
+          <Text style={styles.wrong}>{wrongText}</Text>
+          <Wrong />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
