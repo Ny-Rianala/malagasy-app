@@ -29,7 +29,7 @@ export default function List({label, onPress}) {
       <View style={styles.container}>
         <Text>{label}</Text>
         <View style={styles.subContainer}>
-          <Text style={styles.text}>Learn</Text>
+          <Text style={styles.text}>Pick</Text>
           <Learn style={styles.icon} />
         </View>
       </View>

@@ -11,7 +11,9 @@ function loadStories() {
   require('../src/components/ListItem/ListItem.stories');
   require('../src/components/NextButton/NextButton.stories');
   require('../src/components/PhraseTextarea/PhraseTextarea.stories');
+  require('../src/components/RefacoringList/RefacoringList.stories');
   require('../src/components/RefactoringActionButton/RefactoringActionButton.stories');
+  require('../src/components/RefactoringListItem/RefactoringListItem.stories');
   require('../src/components/SectionHeading/SectionHeading.stories');
   require('../src/components/ToolButton/ToolButton.stories');
   require('./stories/Button/Button.stories');
@@ -26,7 +28,9 @@ const stories = [
   '../src/components/ListItem/ListItem.stories',
   '../src/components/NextButton/NextButton.stories',
   '../src/components/PhraseTextarea/PhraseTextarea.stories',
+  '../src/components/RefacoringList/RefacoringList.stories',
   '../src/components/RefactoringActionButton/RefactoringActionButton.stories',
+  '../src/components/RefactoringListItem/RefactoringListItem.stories',
   '../src/components/SectionHeading/SectionHeading.stories',
   '../src/components/ToolButton/ToolButton.stories',
   './stories/Button/Button.stories',
