@@ -7,8 +7,8 @@ export default function RefactoringList({
   data = () => null,
 }) {
   return (
-    <SafeAreaView style={styles.wrapper}>
-      <View style={styles.container}>
+    <SafeAreaView>
+      <View>
         <Text>{data}</Text>
         <TouchableOpacity
           renderItem={renderItem}
