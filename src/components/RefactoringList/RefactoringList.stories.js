@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 
 const DATA = categories;
 
-const RefactoringLists = () => {
+export const RefactoringLists = () => {
   const renderItem = ({item}) => {
     return (
       <TouchableOpacity style={styles.button} onPress={() => alert('pressed')}>

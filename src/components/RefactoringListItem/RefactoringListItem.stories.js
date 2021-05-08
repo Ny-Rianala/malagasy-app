@@ -40,9 +40,8 @@ const styles = StyleSheet.create({
   },
 });
 const list = phrases.slice(0, 4);
-console.log(list);
 
-const ListItem = () => {
+export const ListItem = () => {
   const renderItem = ({item}) => {
     return (
       <TouchableOpacity style={styles.button} onPress={() => alert('pressed')}>
