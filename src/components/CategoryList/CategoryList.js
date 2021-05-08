@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     paddingTop: 56,
   },
   LanguageSwitcher: {
-    paddingTop: 34,
+    paddingTop: 20,
   },
 });
 
@@ -41,7 +41,9 @@ export const CategoryList = () => {
     <SafeAreaView>
       <View style={styles.ButtonHeadings}>
         <AddButton />
-        <LanguageSwitcher style={styles.LanguageSwitcher} />
+        <View style={styles.LanguageSwitcher}>
+          <LanguageSwitcher />
+        </View>
         <SeenButton />
         <LearntButton />
         <NightmodeButton />
