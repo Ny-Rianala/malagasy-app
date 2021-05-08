@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import {CategoryList} from './src/components/CategoryList';
+import {CategoryList} from './src/components/CategoryList/CategoryList';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';

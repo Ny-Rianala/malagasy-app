@@ -6,14 +6,14 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import {RefactoringLists} from '../components/RefactoringList/RefactoringList.stories';
-import {LanguageSwitcher} from '../components/LanguageSwitcherButton/LanguageSwitcherButton.stories';
+import {RefactoringLists} from '../RefactoringList/RefactoringList.stories';
+import {LanguageSwitcher} from '../LanguageSwitcherButton/LanguageSwitcherButton.stories';
 import {
   AddButton,
   LearntButton,
   SeenButton,
   NightmodeButton,
-} from '../components/ToolButton/ToolButton.stories';
+} from '../ToolButton/ToolButton.stories';
 
 const styles = StyleSheet.create({
   ButtonHeadings: {
