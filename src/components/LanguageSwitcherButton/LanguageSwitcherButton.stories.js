@@ -27,16 +27,22 @@ const styles = StyleSheet.create({
   },
 });
 
+export const LanguageSwitcher = () => {
+  return (
+    <TouchableOpacity
+      onPress={() => alert('switch')}
+      style={styles.switchButton}>
+      <Text style={styles.text}>en</Text>
+      <Switch />
+      <Text style={styles.text}>ma</Text>
+    </TouchableOpacity>
+  );
+};
+
 storiesOf('LanguageSwitcherButton', module)
   .addDecorator(story => <View style={{padding: 20}}>{story()}</View>)
   .add('Language switcher', () => (
     <LanguageSwitcherButton>
-      <TouchableOpacity
-        onPress={() => alert('switch')}
-        style={styles.switchButton}>
-        <Text style={styles.text}>en</Text>
-        <Switch />
-        <Text style={styles.text}>ma</Text>
-      </TouchableOpacity>
+      <LanguageSwitcher />
     </LanguageSwitcherButton>
   ));

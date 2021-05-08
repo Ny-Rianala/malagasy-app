@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Text, SafeAreaView, TouchableOpacity} from 'react-native';
+import {SafeAreaView, TouchableOpacity} from 'react-native';
 
 export default function LanguageSwitcherButton({children}) {
   return (

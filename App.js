@@ -63,9 +63,7 @@ const App: () => Node = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <ScrollView>
-        <CategoryList />
-      </ScrollView>
+      <CategoryList />
     </SafeAreaView>
   );
 };

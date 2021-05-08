@@ -47,44 +47,74 @@ const styles = StyleSheet.create({
   },
 });
 
+export const AddButton = () => {
+  return (
+    <TouchableOpacity style={styles.Button} onPress={() => alert('add')}>
+      <Add />
+    </TouchableOpacity>
+  );
+};
+
+export const SeenButton = () => {
+  return (
+    <TouchableOpacity style={styles.Button} onPress={() => alert('seen')}>
+      <Seen />
+    </TouchableOpacity>
+  );
+};
+
+export const LearntButton = () => {
+  return (
+    <TouchableOpacity
+      style={styles.LearntButton}
+      onPress={() => alert('learnt')}>
+      <Learnt />
+    </TouchableOpacity>
+  );
+};
+
+export const BackButton = () => {
+  return (
+    <TouchableOpacity style={styles.BackButton} onPress={() => alert('back')}>
+      <Back />
+    </TouchableOpacity>
+  );
+};
+
+export const NightmodeButton = () => {
+  return (
+    <TouchableOpacity
+      style={styles.ModeButton}
+      onPress={() => alert('nightmode')}>
+      <NightMode />
+    </TouchableOpacity>
+  );
+};
+
 storiesOf('Tool button', module)
   .addDecorator(story => <View>{story()}</View>)
   .add('add', () => (
     <ToolButton>
-      <TouchableOpacity style={styles.Button} onPress={() => alert('add')}>
-        <Add />
-      </TouchableOpacity>
+      <AddButton />
     </ToolButton>
   ))
   .add('seen', () => (
     <ToolButton>
-      <TouchableOpacity style={styles.Button} onPress={() => alert('seen')}>
-        <Seen />
-      </TouchableOpacity>
+      <SeenButton />
     </ToolButton>
   ))
   .add('learnt', () => (
     <ToolButton>
-      <TouchableOpacity
-        style={styles.LearntButton}
-        onPress={() => alert('learnt')}>
-        <Learnt />
-      </TouchableOpacity>
+      <LearntButton />
     </ToolButton>
   ))
   .add('back', () => (
     <ToolButton>
-      <TouchableOpacity style={styles.BackButton} onPress={() => alert('back')}>
-        <Back />
-      </TouchableOpacity>
+      <BackButton />
     </ToolButton>
   ))
   .add('nitghtmode', () => (
     <ToolButton>
-      <TouchableOpacity
-        style={styles.ModeButton}
-        onPress={() => alert('nightmode')}>
-        <NightMode />
-      </TouchableOpacity>
+      <NightMode />
     </ToolButton>
   ));
