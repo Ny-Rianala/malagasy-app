@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Text, SafeAreaView, TouchableOpacity, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  // Try reusing styles between the normal and disabled version as they are mostly the same.
+  // The text does not seem to be completely centered
   clickableButton: {
     alignItems: 'center',
     paddingTop: 11,

@@ -1,5 +1,5 @@
 import categories from '../data/categories.json';
-console.log(categories);
+console.log(categories); // Please remove all console logs from production code
 
 export function citiesList() {
   return {

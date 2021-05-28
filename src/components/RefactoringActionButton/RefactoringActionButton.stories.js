@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
 storiesOf('RefactoringActionButton', module)
   .addDecorator(story => <View>{story()}</View>)
   .add('learn', () => (
+    //This passes to many children, the Component only expects the text and the icon but you give it the whle button. This is a bad practice because it leads to a lot of duplication.
     <RefactoringActionButton>
       <TouchableOpacity onPress={() => alert('learn')} style={styles.button}>
         <Text style={styles.text}>{text('Learn', 'Learn')}</Text>

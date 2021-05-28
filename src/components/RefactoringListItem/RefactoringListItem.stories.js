@@ -66,6 +66,7 @@ const ListItem = () => {
   );
 };
 
+// In this file, you don't even import the component you want to show. Were there issues with importing components?
 storiesOf('RefactoringListItem', module)
   .addDecorator(story => <View>{story()}</View>)
   .add('listItem', () => <ListItem />);

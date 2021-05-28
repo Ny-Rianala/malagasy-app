@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     textAlign: 'center',
     backgroundColor: 'transparent',
+    // borderWidth is duplicate
     borderWidth: 0,
   },
   button: {

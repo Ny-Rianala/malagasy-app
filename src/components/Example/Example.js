@@ -4,6 +4,7 @@ import {Text, SafeAreaView} from 'react-native';
 // import { styles } from '../constants/globalStyles';
 
 export default function Example({label}) {
+  // You should remove all the storybook examples from the codebase after getting used to it
   console.log(label);
   return (
     <SafeAreaView>

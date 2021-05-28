@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 });
-
+// In here you want to arguments, label and onPress but in storyBook, you pass only the label
 export default function ListItem({label, onPress}) {
   return (
     <SafeAreaView style={styles.wrapper} onPress={onPress}>

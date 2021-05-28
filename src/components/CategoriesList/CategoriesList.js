@@ -5,6 +5,7 @@ import {useSelector} from 'react-redux';
 // import categories from '../../data/categories.json';
 
 export default function categoriesList() {
+  // React components should be KebabCase => CategoriesList()
   const listOfCategories = useSelector(state => state.categories);
   console.log(listOfCategories);
 

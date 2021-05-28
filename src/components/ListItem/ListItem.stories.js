@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   },
 });
 
+// In this story, you should only show a single list item (multiple together will be in the list)
 storiesOf('ListItem', module)
   .addDecorator(story => <View>{story()}</View>)
   .add('listItem', () => (

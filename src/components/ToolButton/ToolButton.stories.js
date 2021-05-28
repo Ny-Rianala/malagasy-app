@@ -10,6 +10,7 @@ import NightMode from '../../assets/icons/night-mode.svg';
 import ToolButton from './ToolButton.js';
 
 const styles = StyleSheet.create({
+  // many duplicated styles, svg not centered correctly
   Button: {
     backgroundColor: '#06B6D4',
     borderRadius: 50,

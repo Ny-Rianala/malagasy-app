@@ -52,6 +52,8 @@ export default function ActionButton({
   correctText,
   wrongText,
 }) {
+  //The action button component only creates one button at a time, not all four.
+  // I added a file in this folder containing a picture of how the components look for me. If there is a rendering error on my part, please let me know :)
   return (
     <View style={styles.container}>
       <View style={styles.subcontainer}>
