@@ -25,12 +25,12 @@ General Issues:
 - Github workflow 9/10 pull request follow correct structure, descriptions should be longer/ more telling.
 - No spelling mistakes: 5/5
 - Clickup workflow: 3/3
-- Use of screen navigation 0/10 N/A
-- React Context: 10/10
+- Use of screen navigation 0/5 N/A
+- React Context: 5/5
 - Reducer 5/5
 - Clean Code: 3/10 Should have removed storybook examples; see general issues.
 
-Total 55/133 => 41%
+Total 50/123 => 41%
 
 I noticed that time and a better understanding of how storybook should be used were major limitations for you during this project. The first one will certainly get better with practice, so don't worry about that one :)
 To improve understanding, this project shows how important asking questions is. If there is something left unclear, ask, even in a graded project. It will always be worth it. Ask, ask, ask questions, I promise everything under <100 questions a day will not annoy anybody. I hppe this feedback will be helpful for you!
